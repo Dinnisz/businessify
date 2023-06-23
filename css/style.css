@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 body {
     font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: #ffffff;
+    background-color: #fff;
     height: 200vh;
     position: relative;
 }
@@ -128,6 +128,7 @@ header .navbar {
         background: none !important;
         position: relative;
     }
+    
 }
 
 header .navbar .nav-link {
@@ -223,8 +224,7 @@ main {
 }
 
 article {
-    margin: 20px 50px;
-    margin-top: 40px;
+    text-align: left;
 }
 
 .introdution {
@@ -233,5 +233,22 @@ article {
     text-indent: 30px;
     line-height: 2em;
     font-size: 1.1em;
-    width: 45%;
+   
+}
+
+.imagetext{
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .imagetext{
+        display: inline-block;
+        width: 100%;
+        align-items: left;
+    }
+}
+
+.imagebusiness{
+    width: 50%; 
+    margin-left: 20%;
 }
