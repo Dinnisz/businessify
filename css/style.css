@@ -245,6 +245,18 @@ article {
         display: inline-block;
         width: 100%;
         align-items: left;
+        min-height: 100%;
+    }
+    #whatweoffer{
+        text-align: center;
+    }
+    .imagebusiness{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
