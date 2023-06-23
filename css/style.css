@@ -251,16 +251,14 @@ article {
         text-align: center;
     }
     .imagebusiness{
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 100px;
+        padding-top: 500px;
         padding-bottom: 100px;
     }
 }
 
 .imagebusiness{
-    width: 50%; 
-    margin-left: 20%;
+    width: 80%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
