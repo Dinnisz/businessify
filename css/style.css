@@ -128,7 +128,6 @@ header .navbar {
         background: none !important;
         position: relative;
     }
-    
 }
 
 header .navbar .nav-link {
@@ -233,31 +232,30 @@ article {
     text-indent: 30px;
     line-height: 2em;
     font-size: 1.1em;
-   
 }
 
-.imagetext{
+.imagetext {
     display: flex;
 }
 
 @media (max-width: 768px) {
-    .imagetext{
+    .imagetext {
         display: inline-block;
         width: 100%;
         align-items: left;
         min-height: 100%;
     }
-    #whatweoffer{
+    #whatweoffer {
         text-align: center;
     }
-    .imagebusiness{
-        padding-top: 500px;
+    .imagebusiness {
+        padding-top: 50px;
         padding-bottom: 100px;
     }
 }
 
-.imagebusiness{
-    width: 80%; 
+.imagebusiness {
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
