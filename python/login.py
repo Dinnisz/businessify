@@ -1,9 +1,22 @@
+
 import mysql.connector
 
-cnx = mysql.connector.connect(user='JV214_jvarandas', password='wate4606',
-                              host='hostingmysql156.amen.pt',
-                              database='businessfy')
+mydb = mysql.connector.connect(
+  host="businessify-instance-1.chrfb0kulzyt.eu-west-3.rds.amazonaws.com",
+  user="admin",
+  password="Businessify=1177"
+)
 
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT pswd FROM businessify.sec_users")
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
+
+print('ola')
 
 
 

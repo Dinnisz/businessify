@@ -10,6 +10,11 @@
     <link rel="icon" type="image/x-icon" href="images/logo3.png">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
 
+    <!--Pyscript-->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <!---->
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -65,11 +70,11 @@
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item cta-btn">
-                            
-                                <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
+
+                            <button type="button" class="btn btn-info btn-round" data-toggle="modal" data-target="#loginModal">
                                   Login
-                                </button>  
-                             
+                                </button>
+
                         </li>
                     </ul>
 
@@ -83,36 +88,36 @@
         <article>
             <div>
                 <h1 id="whatweoffer" style="margin-top: 20px;">What we offer?</h1>
-                    <div class="imagetext" >
-                         <p class="introdution">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore quos iusto officia, harum amet, modi vero dignissimos quo, qui sit ipsam minima earum odio eaque dolor accusamus quae? Quia. Lorem ipsum dolor sit, amet
-                          consectetur adipisicing elit. Sed aperiam deleniti repellendus expedita? Quia saepe iste officiis modi animi vitae, dolorum quisquam quis esse. Asperiores, nisi? Harum enim aut nostrum.</p>
-                
-                        <div><img  class="imagebusiness" src="images/pexels-fauxels-3183197.jpg" alt=""></div>
-                    </div>
+                <div class="imagetext">
+                    <p class="introdution">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis inventore quos iusto officia, harum amet, modi vero dignissimos quo, qui sit ipsam minima earum odio eaque dolor accusamus quae? Quia. Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Sed aperiam deleniti repellendus expedita? Quia saepe iste officiis modi animi vitae, dolorum quisquam quis esse. Asperiores, nisi? Harum enim aut nostrum.</p>
+
+                    <div><img class="imagebusiness" src="images/pexels-fauxels-3183197.jpg" alt=""></div>
+                </div>
             </div>
             <!-- Carousel -->
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
                 <!-- Indicators/dots -->
                 <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                 </div>
-            
+
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/939-9396585_blue-overlap-triangle-logo-triangulo-azul-vetor-png.png" alt="Los Angeles" class="d-block w-100">
+                    <div class="carousel-item active">
+                        <img src="images/939-9396585_blue-overlap-triangle-logo-triangulo-azul-vetor-png.png" alt="Los Angeles" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/pexels-johannes-plenio-1103970.jpg" alt="Chicago" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/pexels-fauxels-3183197.jpg" alt="New York" class="d-block w-100">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/pexels-johannes-plenio-1103970.jpg" alt="Chicago" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/pexels-fauxels-3183197.jpg" alt="New York" class="d-block w-100">
-                </div>
-                </div>
-            
+
                 <!-- Left and right controls/icons -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -124,74 +129,79 @@
             <div class="container-fluid mt-3">
                 <h3>Carousel Example</h3>
                 <p>The following example shows how to create a basic carousel with indicators and controls.</p>
-              </div>
+            </div>
 
-            
+
 
         </article>
     </main>
 
     <!--Login Popup-->
-    
-      
-      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header border-bottom-0">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </div>
-            <div class="modal-body">
-              <div class="form-title text-center">
-                <h4>Login</h4>
-              </div>
-              <div class="d-flex flex-column text-center">
-                <form>
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="email1"placeholder="Your email address...">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" id="password1" placeholder="Your password...">
-                  </div>
-                  <button type="button" class="btn btn-info btn-block btn-round">Login</button>
-                </form>
-                
-                <div class="text-center text-muted delimiter">or use a social network</div>
-                <div class="d-flex justify-content-center social-buttons">
-                  <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Login</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                        </form>
+
+                        <div class="text-center text-muted delimiter">or use a social network</div>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
                     <i class="fab fa-twitter"></i>
                   </button>
-                  <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
                     <i class="fab fa-facebook"></i>
                   </button>
-                  <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                            <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
                     <i class="fab fa-linkedin"></i>
                   </button>
-                </di>
-              </div>
-            </div>
-          </div>
-            <div class="modal-footer d-flex justify-content-center">
-              <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+                            </di>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+                </div>
             </div>
         </div>
-      </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/main.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/main.js"></script>
 
-    <!--login popup -->
-    <script>
-        $(document).ready(function() {             
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-});
-    </script>
+        <!--login popup -->
+        <script>
+            $(document).ready(function() {
+                $(function() {
+                    $('[data-toggle="tooltip"]').tooltip()
+                })
+            });
+        </script>
+
+
+
+
+
 
 </body>
 
